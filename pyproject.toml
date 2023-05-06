@@ -1,0 +1,12 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "resilio"
+version = "0.0.1"
+dependencies = [
+  'Flask ~= 2.3',
+  'httpx ~= 0.24',
+  'hatch ~= 1.7',
+]
