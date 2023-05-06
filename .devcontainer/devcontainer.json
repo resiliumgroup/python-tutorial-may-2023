@@ -1,12 +1,11 @@
 {
-    "image":"mcr.microsoft.com/devcontainers/universal:2",
-    "forwardPorts": [5000],
-    "postCreateCommand": "pip install -e .",
-    "customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			"settings": {},
-			"extensions": ["ms-python.python", "wholroyd.jinja"]
-		}
+  "image":"mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [5000],
+  "postCreateCommand": "pip install -e .",
+  "customizations": {
+    "vscode": {
+      "settings": {"python.linting.enabled": false},
+      "extensions": ["ms-python.python", "wholroyd.jinja"]
     }
+  }
 }
